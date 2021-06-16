@@ -1,10 +1,17 @@
 import React from 'react'
+import Typical from 'react-typical'
 import { Link } from 'react-router-dom'
 import { MdLanguage } from 'react-icons/md'
 import { MdDevicesOther } from 'react-icons/md'
 import { MdViewCompact } from 'react-icons/md'
 import { BsBarChart } from 'react-icons/bs'
+import { BiChevronsDown } from 'react-icons/bi'
 import { BsPlug } from 'react-icons/bs'
+import { FaGithub } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaBezierCurve } from 'react-icons/fa'
+
 const progress = {
     width:'30%'
 }
@@ -12,23 +19,47 @@ const progress = {
     return (
         <>
            <section className="showcase">
-               <div className="overlay flex flex-col items-center justify-center text-white">
-                   <h1 className="text-5xl mb-5">
-                      Hello,I'm  
-                    </h1>
-                    <h1 className="text-5xl font-semibold mb-9">Julius Hatibu</h1>
-                    <p className="mb-6">AND THIS IS MY RESUME</p>
+               <div className="h-screen overlay flex flex-col items-center justify-center text-white">
+                   
+                    <h1 className="text-5xl font-semibold mb-9">Hello, I'm Julius Hatibu</h1>
+                    <h1 className="text-5xl font-semibold mb-9">
+                        <Typical 
+                        loop={Infinity}
+                        wrapper="p"
+                        steps={[
+                            'Developer',
+                            2000, 
+                            'Front-End',
+                            2000, 
+                            'Back-End',
+                            2000, 
+                            'Graphics Designer',
+                            2000
+                        ]}
+                        />
+                       
+                        </h1>
                     <div className="">
-                        <Link to="/hire" className="mr-5 bg-indigo-700 p-2 px-4 rounded-full transition-all hover:bg-indigo-900 ">
-                            Get started
-                            </Link>
-                        <Link to="/projects">Projects</Link>
+                        <button 
+                        onClick={() => {
+                            window.open("mailto:juliushatibuy@gmail.com");
+                          }}
+                         className="mr-5 bg-indigo-700 p-2 px-4 rounded-full transition-all hover:bg-indigo-900 ">
+                            Email Me
+                            </button>
+                            <button className="mr-5 bg-indigo-700 p-2 px-4 rounded-full transition-all hover:bg-indigo-900 " >
+                            <Link to="/projects" >Projects</Link>
+                            </button>
+                        
                     </div>
                </div>
+               <a href="#about" className="animate-bounce text-5xl w-full grid place-items-center -mt-20">
+               <BiChevronsDown color="white" />
+               </a>
                
                </section> 
                {/* about section */}
-               <div className=" w-full h-auto bg-gray-100  grid grid-cols-1 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2">
+               <div id="about" className=" w-full h-screen bg-gray-100  grid grid-cols-1 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2">
                <div class="bg-white lg:ml-28 shadow  p-6 lg:w-5/6  sm:w-full mt-10">
                    <div className="flex">
                         <img className="rounded h-36 w-44" src="/images/me.jpg" alt="hello" />
@@ -134,39 +165,36 @@ const progress = {
                 </div>
                </div>
             {/*service section */}
-            <div className="w-full bg-gray-100 ">
+            <div className="service w-full bg-gray-100  pb-20">
             <div className="service container px-4 mx-auto ">
                 <br />
                 <br />
             <div class="font-bold text-4xl  text-center ">WHAT I OFFER</div>
-                <div className="sm:grid sm:grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 mt-20 text-center justify-center sm:grid-cols-1 ">
+                <div className="sm:grid sm:grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 mt-20 text-center justify-center ">
                 
                     {/*service 1 */}
-                <div class="max-w-sm  lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white">
+                <div class="max-w-sm  lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
                         
                     <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
-                        <MdLanguage className="w-12 h-12 mt-4 ml-3 " ></MdLanguage>
+                        <MdLanguage className="w-12 h-12 mt-5 ml-3 " ></MdLanguage>
                         </span>
                         <div class="font-bold text-xl mb-2">UI/UX DESIGN</div>
                         <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                        i have experience working with teams to brainstorm and whiteboard concepts,
+                         i can create wireframes at varying levels of fidelity, and enjoy working with 
+                         devs to build ideas out.
                         </p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Download Resume
-                    </button>
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Email Me
-                    </button>
+                 
                     </div>
                     </div>
                     {/*service 2*/}
-                    <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white">
+                    <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
                     <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
-                        <MdDevicesOther className="w-12 h-12 mt-4 ml-3 " ></MdDevicesOther>
+                        <MdDevicesOther className="w-12 h-12 mt-5 ml-3 " ></MdDevicesOther>
                         </span>
                         <div class="font-bold text-xl mb-2">FRONT-END DEV </div>
                         <p class="text-gray-700 text-base">
@@ -175,34 +203,25 @@ const progress = {
                         </p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Download Resume
-                    </button>
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Email Me
-                    </button>
+                 
                     </div>
                     </div>
                     {/*service 3 */}
-                    <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white">
+                    <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
                     <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
-                        <MdViewCompact className="w-12 h-12 mt-4 ml-3 " ></MdViewCompact>
+                        <MdViewCompact className="w-12 h-12 mt-5 ml-3 " ></MdViewCompact>
                         </span>
                     
-                        <div class="font-bold text-xl mb-2">BACK-END DEV</div>
+                        <div class="font-bold text-xl ">BACK-END DEV</div>
                         <p class="text-gray-700 text-base">
                         I can build scallable and optmized backend service by 
-                        using Node&Express, Flask and handling databases
+                        using Laravel, Flask and handling databases
                         </p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Download Resume
-                    </button>
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Email Me
-                    </button>
+                  
+                  
                     </div>
                     </div>
                 
@@ -213,35 +232,30 @@ const progress = {
 
              {/*second service section */}
              <div className="service container px-4 mx-auto  ">
-                <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 mt-20 text-center justify-center sm:grid-cols-1 ">
+                <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 mt-10 text-center justify-center sm:grid-cols-1 ">
                 
                     {/*service 1 */}
-                <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white">
+                <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
                         <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
-                        <BsPlug className="w-12 h-12 mt-4 ml-3 " ></BsPlug>
+                        <BsPlug className="w-12 h-12 mt-5 ml-3 " ></BsPlug>
                         </span>
                     
                     
                         <div class="font-bold text-xl mb-2">API DEVELOPMENT</div>
                         <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                        I can build scallable and optmized REST API's by using Laravel, Flask
                         </p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Download Resume
-                    </button>
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Email Me
-                    </button>
+                  
                     </div>
                     </div>
                     {/*service 2*/}
-                    <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white">
+                    <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
                     <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
-                        <MdDevicesOther className="w-12 h-12 mt-4 ml-3 " ></MdDevicesOther>
+                        <FaBezierCurve className="w-12 h-12 mt-5 ml-3 " ></FaBezierCurve>
                         </span>
                         <div class="font-bold text-xl mb-2">GRAPHICS DESIGN </div>
                         <p class="text-gray-700 text-base">
@@ -250,41 +264,38 @@ const progress = {
                         </p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Download Resume
-                    </button>
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Email Me
-                    </button>
+                  
                     </div>
                     </div>
                     {/*service 3 */}
-                    <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white">
+                    <div class="max-w-sm px-4 lg:w-full md:w-full sm:w-full rounded overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
                         <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
-                        <BsBarChart className="w-12 h-12 mt-4 ml-3 " ></BsBarChart>
+                        <BsBarChart className="w-12 h-12 mt-5 ml-3 " ></BsBarChart>
                         </span>
                    
                         <div class="font-bold text-xl mb-2">DATA ANALYSIS</div>
                         <p class="text-gray-700 text-base">
                         I can build scallable and optmized backend service by 
-                        using Node&Express, Flask and handling databases
+                        using Laravel, Flask and handling databases
                         </p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Download Resume
-                    </button>
-                    <button className="bg-gray-200 text-black active:bg-lightBlue-600 font-semibold  text-sm px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                    Email Me
-                    </button>
-                        
-        
                     </div>
                     </div>
                 
                 </div>
             </div>
+            </div>
+             {/*footer*/}
+            <div className="footer w-full h-36 text-center text-white bg-blue-500 pb-10">
+                <h1 className="text-lg p-4">© Copyright Julius Hatibu. All Rights Reserved</h1>
+                <h1 className="text-lg">Designed by Julius Hatibu</h1>
+                <div className="justify-center flex ">
+                    <FaGithub className="h-10 w-10 py-2" />
+                    <FaInstagram className="h-10 w-10 py-2" />
+                    <FaLinkedin className="h-10 w-10 py-2" />
+                </div>
             </div>
             
                 
