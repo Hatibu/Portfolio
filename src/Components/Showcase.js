@@ -19,10 +19,10 @@ const progress = {
     return (
         <>
            <section className="showcase">
-               <div className="h-screen overlay flex flex-col items-center justify-center text-white">
+               <div className="lg:h-screen md:h-screen overlay flex flex-col items-center justify-center text-white">
                    
-                    <h1 className="text-5xl font-semibold mb-9">Hello, I'm Julius Hatibu</h1>
-                    <h1 className="text-5xl font-semibold mb-9">
+                    <h1 className="text-2xl md:text-5xl lg:text-5xl font-semibold mb-9">Hello, I'm Julius Hatibu</h1>
+                    <h1 className="text-lg md:text-3xl lg:text-5xl font-semibold mb-9">
                         <Typical 
                         loop={Infinity}
                         wrapper="p"
@@ -59,15 +59,15 @@ const progress = {
                
                </section> 
                {/* about section */}
-               <div id="about" className=" w-full h-screen bg-gray-100  grid grid-cols-1 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2">
-               <div class="bg-white lg:ml-28 shadow  p-6 lg:w-5/6  sm:w-full mt-10">
+               <div id="about" className=" w-full lg:Fh-screen bg-gray-100  grid grid-cols-1 lg:grid lg:grid-cols-2 md:gap-6 lg:gap-6 md:grid md:grid-cols-2 lg:p-10 md:p-10 ">
+               <div class="bg-white lg:ml-28 shadow  p-6 px-10 lg:w-5/6  w-full lg:mt-10 md:mt-10">
                    <div className="flex">
-                        <img className="rounded h-36 w-44" src="/images/me.jpg" alt="hello" />
+                        <img className="rounded lg:h-36 md:h-36 lg:w-44 md:w-44 h-0 w-0" src="/images/me.jpg" alt="hello" />
                         <div className="font-bold mb-4 mt-0 ml-10 ">
-                        <p class=" p-2">Name: Julius P Hatibu</p>
-                        <h5 class=" p-2">Profile: Full Stack Developer</h5>
-                        <h5 class=" p-2">Email: juliushatibu@gmail.com</h5>
-                        <h5 class=" p-2">Phone: (255) 715 620 051</h5>
+                        <p class="p-2 lg:p-2 md:p-2">Name: Julius P Hatibu</p>
+                        <p class="p-2 lg:p-2 md:p-2">Profile: Full Stack Developer</p>
+                        <p class="p-2 lg:p-2 md:p-2">Email: juliushatibu@gmail.com</p>
+                        <p class="p-2 lg:p-2 md:p-2">Phone: (255) 715 620 051</p>
                          
                         </div>
                        
@@ -148,7 +148,7 @@ const progress = {
                 
                 </div>
 
-                <div class="bg-white shadow p-6 lg:w-5/6 mt-10  border-purple-500 sm:w-full ">
+                <div class="bg-white shadow p-6 px-10 lg:w-5/6 w-full lg:mt-10 md:mt-10">
                 <h5 class="text-3xl font-bold mb-4 mt-0">About Me</h5>
                 <p class="text-gray-700 text-lg">
                 I am a highly competent web application software developer with professional
