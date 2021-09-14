@@ -2,9 +2,6 @@ import React from 'react'
 import Typical from 'react-typical'
 import { Link } from 'react-router-dom'
 import { BiChevronsDown } from 'react-icons/bi'
-import { FaGithub } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
 
 
 const progress = {
