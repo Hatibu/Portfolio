@@ -10,18 +10,18 @@ const Section = () => {
     return (
         <div className="section">
                   {/*service section */}
-                  <div className="service w-full bg-gray-100  pb-20">
-            <div className="service container px-4 mx-auto ">
-                <br />
-                <br />
-            <div class="font-bold text-4xl  text-center ">Offered services</div>
+                  <div className="service w-full bg-gradient-to-r from-green-400 to-blue-300  pb-20">
+                 <div className="service container px-4 mx-auto ">
+                   <br />
+                  <br />
+              <div class="font-bold text-4xl  text-center  ">Offered services</div>
                 <div className="sm:grid sm:grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 mt-20 text-center justify-center ">
                 
                     {/*service 1 */}
                 <div class="max-w-sm  lg:w-full md:w-full sm:w-full rounded-xl lg:p-10 overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
                         
-                    <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
+                    <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-400 border-8 border-blue-400 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
                         <MdLanguage className="w-12 h-12 mt-5 ml-3 " ></MdLanguage>
                         </span>
                         <div class="font-bold text-xl mb-2">UI/UX DESIGN</div>
@@ -38,7 +38,7 @@ const Section = () => {
                     {/*service 2*/}
                     <div class="max-w-sm px-4 lg:p-10 lg:w-full md:w-full sm:w-full rounded-xl overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
-                    <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
+                    <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-400 border-8 border-blue-400 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
                         <MdDevicesOther className="w-12 h-12 mt-5 ml-3 " ></MdDevicesOther>
                         </span>
                         <div class="font-bold text-xl mb-2">FRONT-END DEV </div>
@@ -54,7 +54,7 @@ const Section = () => {
                     {/*service 3 */}
                     <div class="max-w-sm px-4 lg:p-10 lg:w-full md:w-full sm:w-full rounded-xl overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
-                    <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
+                    <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-400 border-8 border-blue-400 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
                         <MdViewCompact className="w-12 h-12 mt-5 ml-3 " ></MdViewCompact>
                         </span>
                     
@@ -82,7 +82,7 @@ const Section = () => {
                     {/*service 1 */}
                 <div class="max-w-sm px-4 lg:p-10 lg:w-full md:w-full sm:w-full -xl overflow-hidden rounded-xl shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
-                        <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
+                        <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-400 border-8 border-blue-400 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
                         <BsPlug className="w-12 h-12 mt-5 ml-3 " ></BsPlug>
                         </span>
                     
@@ -99,7 +99,7 @@ const Section = () => {
                     {/*service 2*/}
                     <div class="max-w-sm px-4 lg:p-10 lg:w-full md:w-full sm:w-full rounded-xl overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
-                    <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
+                    <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-400 border-8 border-blue-400 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
                         <FaBezierCurve className="w-12 h-12 mt-5 ml-3 " ></FaBezierCurve>
                         </span>
                         <div class="font-bold text-xl mb-2">GRAPHICS DESIGN </div>
@@ -115,7 +115,7 @@ const Section = () => {
                     {/*service 3 */}
                     <div class="max-w-sm px-4 lg:p-10 lg:w-full md:w-full sm:w-full rounded-xl overflow-hidden shadow-lg bg-white m-1.5">
                     <div class="px-6 py-4">
-                        <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-500 border-8 border-blue-500 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
+                        <span className="icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-400 border-8 border-blue-400 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center">
                         <BsBarChart className="w-12 h-12 mt-5 ml-3 " ></BsBarChart>
                         </span>
                    
