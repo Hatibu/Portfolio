@@ -12,7 +12,8 @@ const About = () => {
              <div id="about" className=" w-full lg:Fh-screen bg-gray-100  grid grid-cols-1 lg:grid lg:grid-cols-2 md:gap-6 lg:gap-6 md:grid md:grid-cols-2 lg:p-10 md:p-10 ">
                <div class="bg-white lg:ml-28 shadow  p-6 px-10 lg:w-5/6  w-full lg:mt-10 md:mt-10">
                    <div className="flex">
-                        <img className="rounded lg:h-36 md:h-36 lg:w-44 md:w-44 h-0 w-0" src="/images/me.jpg" alt="hello" />
+                        <img className="rounded lg:h-36 md:h-36 lg:w-44 md:w-44 h-0 w-0" 
+                        src={'https://firebasestorage.googleapis.com/v0/b/medias-da388.appspot.com/o/me.jpg?alt=media&token=9c2b6623-5a20-4628-9c53-a31df36fc43f'} alt="hello" />
                         <div className="font-bold mb-4 mt-0 ml-10 ">
                         <p class="p-2 lg:p-2 md:p-2">Name: Julius P Hatibu</p>
                         <p class="p-2 lg:p-2 md:p-2">Profile: Full Stack Developer</p>
