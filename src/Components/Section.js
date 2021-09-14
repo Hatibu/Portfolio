@@ -10,7 +10,7 @@ const Section = () => {
     return (
         <div className="section">
                   {/*service section */}
-                  <div className="service w-full bg-gradient-to-r from-green-400 to-blue-300  pb-20">
+                  <div className="service w-full bg-gradient-to-r from-green-300 to-blue-300  pb-20">
                  <div className="service container px-4 mx-auto ">
                    <br />
                   <br />
