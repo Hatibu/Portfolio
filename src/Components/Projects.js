@@ -34,7 +34,7 @@ import useDarkMode from '../hook/useDarkMode'
                                         </path>
                                         </svg>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/suleiman-msumari-75170b181/">
+                                        <a href="https://www.linkedin.com/in/julius-hatibu/">
                                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
                                          class="w-8 h-8 text-blue-800 cursor-pointer" 
                                         height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
