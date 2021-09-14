@@ -2,7 +2,8 @@
 import './App.css';
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-//import Header from './Components/Header'
+import Section from './Components/Section'
+import Footer from './Components/Footer'
 import Hire from './Components/Hire'
 import Projects from './Components/Projects'
 import Showcase from './Components/Showcase'
@@ -14,6 +15,10 @@ function App() {
         
         <Route path="/" exact>
             <Showcase />
+            <Section />
+            <Footer />
+
+
         </Route>
         <Route path="/projects" >
             <Projects />
