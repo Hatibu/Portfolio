@@ -11,23 +11,22 @@ import { BiChevronsDown } from 'react-icons/bi'
                <div className="lg:h-screen md:h-screen overlay flex flex-col items-center justify-center text-white">
                    
                     <h1 className="text-2xl md:text-5xl lg:text-5xl font-semibold mb-9">Hello, I'm Julius Hatibu</h1>
-                    <h1 className="text-lg md:text-3xl lg:text-5xl font-semibold mb-9">
+                    <p className="text-lg md:text-3xl lg:text-3xl font-semibold mb-9">
                         <Typical 
                         loop={Infinity}
                         wrapper="p"
                         steps={[
-                            'Developer',
+                            
+                            'Front-End Dev',
                             2000, 
-                            'Front-End',
-                            2000, 
-                            'Back-End',
+                            'Back-End Dev',
                             2000, 
                             'Graphics Designer',
                             2000
                         ]}
                         />
                        
-                        </h1>
+                        </p>
                     <div className="">
                         <button 
                         onClick={() => {
