@@ -2,7 +2,7 @@
 /*showcase*/
 .showcase{
   height: 100vh;
-  background: url(./me.jpg) no-repeat center/cover;
+  background: url('https://firebasestorage.googleapis.com/v0/b/medias-da388.appspot.com/o/me.jpg?alt=media&token=9c2b6623-5a20-4628-9c53-a31df36fc43f') no-repeat center/cover;
 }
 .showcase .overlay{
   height: 100vh;
