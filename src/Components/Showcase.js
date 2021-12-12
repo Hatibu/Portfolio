@@ -22,7 +22,10 @@ import { BiChevronsDown } from 'react-icons/bi'
                             'Back-End Dev',
                             2000, 
                             'Graphics Designer',
+                            2000, 
+                            'Fullstack Engineer',
                             2000
+                            
                         ]}
                         />
                        
@@ -32,10 +35,10 @@ import { BiChevronsDown } from 'react-icons/bi'
                         onClick={() => {
                             window.open("mailto:juliushatibu@gmail.com");
                           }}
-                         className="mr-5 bg-indigo-700 p-2 px-4 rounded-full transition-all hover:bg-indigo-900 ">
+                         className="mr-5 bg-blue-700 p-2 px-4 rounded-full transition-all hover:bg-indigo-900 ">
                             Email Me
                             </button>
-                            <button className="mr-5 bg-indigo-700 p-2 px-4 rounded-full transition-all hover:bg-indigo-900 " >
+                            <button className="mr-5 bg-blue-700 p-2 px-4 rounded-full transition-all hover:bg-indigo-900 " >
                             <Link to="/projects" >Projects</Link>
                             </button>
                         
