@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 /*showcase*/
 .showcase{
   height: 100vh;
-  background: url('https://firebasestorage.googleapis.com/v0/b/medias-da388.appspot.com/o/me.jpg?alt=media&token=9c2b6623-5a20-4628-9c53-a31df36fc43f') no-repeat center/cover;
+  background: url('https://firebasestorage.googleapis.com/v0/b/medias-da388.appspot.com/o/julius.jpg?alt=media&token=3ddcc550-ec34-414e-a319-d4caf16140e2') no-repeat center/cover;
+  
 }
 .showcase .overlay{
   height: 100vh;
@@ -14,43 +15,23 @@
 .icons{
   border-radius: 50%;
 }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+.service{
+  background-color: #E5E7EB;
+}
 
 /*End of protifolio style*/
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
