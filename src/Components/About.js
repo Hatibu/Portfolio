@@ -5,7 +5,7 @@ const About = () => {
    
     return (
         <div className="about">
-             <div className=" w-full h-screen bg-indigo-100 lg:flex gap-4 lg:px-20  md:flex  md:p-10 p-4 ">
+             <div className=" w-full  bg-indigo-100 lg:flex gap-4 lg:px-20  md:flex  md:p-10 p-4 ">
                <div class="bg-white  shadow mb-4 rounded-lg p-6 px-10 lg:w-5/6  w-full lg:mt-10 md:mt-10">
                    <div className="flex">
                         <img className="rounded lg:h-28  lg:w-36 md:w-0 md:h-0 h-0 w-0" 
