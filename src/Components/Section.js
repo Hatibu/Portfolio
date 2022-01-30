@@ -15,7 +15,7 @@ const Section = () => {
                  <div className="service w-full px-6 -ml-2">
                   <br/>
                   
-                 <h1 className="font-bold text-xl  lg:text-4xl  text-center  ">Offered services</h1>
+                 <h1 className="font-bold text-3xl md:text-3xl  lg:text-4xl  text-center  ">Offered services</h1>
                 <div className="lg:flex md:flex mt-10 lg:mt-20 text-center justify-center ">
                 
                     {/*service 1 */}
