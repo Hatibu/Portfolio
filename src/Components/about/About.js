@@ -1,10 +1,9 @@
 import React from 'react';
-import '../index.css';
-
+import './About.css';
 const About = () => {
   return (
     <div className='about'>
-      <div className=' w-full  bg-indigo-100 lg:flex gap-4 lg:px-20  md:flex  md:p-10 p-4 '>
+      <div className=' w-full lg:flex gap-4 lg:px-20  md:flex  md:p-10 p-4 '>
         <div class='bg-white  shadow mb-4 rounded-lg p-6 px-10 lg:w-5/6  w-full lg:mt-10 md:mt-10'>
           <div className='flex'>
             <img
@@ -15,10 +14,11 @@ const About = () => {
               alt='hello'
             />
             <div className=' mb-4 mt-0 lg:ml-10 '>
-              <p class='p-2 '>Name: Julius P Hatibu</p>
+              <p class='p-2 '>Name: Julius Hatibu</p>
               <p class='p-2 '>Profile: Full Stack Developer</p>
               <p class='p-2 '>Email: juliushatibu@gmail.com</p>
               <p class='p-2 '>Phone: (+255) 715 620 051</p>
+              <p class='p-2 '>Phone: (+255) 692 554 907</p>
             </div>
           </div>
           <div className='w-full'>

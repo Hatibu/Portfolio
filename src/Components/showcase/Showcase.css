@@ -1,0 +1,37 @@
+
+.hero{
+  background-color: #4E6C50;
+}
+.btn1{
+  border: 3px solid #12281d;
+}
+.btn1:hover{
+  background-color: #12281d;
+}
+.btn2{
+  background-color: #12281d;
+  border: 3px solid #12281d;
+}
+.icons{
+  border-radius: 50%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+.service{
+  background-color: #E5E7EB;
+}
+
+/*End of protifolio style*/
+.App {
+  text-align: center;
+}
+

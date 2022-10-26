@@ -1,24 +1,23 @@
 import React from 'react';
-import '../index.css';
 
-import MyService from '../data/service';
+import MyService from '../../data/service';
+import './Section.css';
 
 const Section = () => {
   return (
     <div className='section'>
-      {/*service section */}
-      <div className='service w-full pb-20'>
-        <div className='service w-full px-6 -ml-2'>
+      <div className=' w-full lg:py-20 py-10'>
+        <div className=' w-full px-6 -ml-2'>
           <br />
 
           <h1 className='font-bold text-3xl md:text-3xl  lg:text-4xl  text-center  '>
-            Offered services
+            What I Offer
           </h1>
           <div className='grid lg:flex lg:flex-wrap md:flex md:flex-wrap gap-6 mt-10 lg:mt-20 text-center justify-center '>
             {MyService.map((value) => (
               <div
                 key={value.id}
-                className='max-w-sm w-full rounded-md lg:p-10 overflow-hidden shadow-lg bg-white m-1.5 '
+                className='max-w-sm w-full rounded-md lg:p-10 overflow-hidden shadow-lg bg-white m-1.5 hover:shadow-xl '
               >
                 <div className='px-6 py-4'>
                   <span className='icons inline-block w-28 h-28 px-3 py-1 text-sm hover:bg-blue-400 border-8 border-blue-400 hover:border-blue-200 hover:text-white font-semibold text-gray-700 text-center'>
