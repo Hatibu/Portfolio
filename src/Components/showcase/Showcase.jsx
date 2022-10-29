@@ -7,7 +7,7 @@ const Showcase = () => {
   return (
     <div className='hero h-screen '>
       <div className='h-screen grid place-content-center justify-evenly'>
-        <div className='flex flex-col items-center justify-center text-white'>
+        <div className='flex flex-col items-center justify-center text-white lg:pt-36'>
           <h1 className='text-2xl md:text-5xl lg:text-5xl font-semibold mb-9'>
             Hello, I'm Julius Hatibu
           </h1>

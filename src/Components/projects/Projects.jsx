@@ -132,7 +132,7 @@ const Projects = () => {
                   </div>
                   <div>
                     <a
-                      href='https://patternpad.com/'
+                      href={value.link}
                       className=' w-12 px-4 py-2 bg-black text-white rounded '
                     >
                       View
