@@ -12,7 +12,7 @@ const Showcase = () => {
             Hello, I'm Julius Hatibu
           </h1>
           <p className='text-lg md:text-3xl lg:text-3xl font-semibold mb-9'>
-            software Engineer
+            Software Engineer
           </p>
           <div className=''>
             <button
