@@ -96,7 +96,7 @@ const About = () => {
             </div>
             {/*Design tools*/}
             <div class='relative pt-1'>
-              <p>Programming Languages</p>
+              <p>Designing Tools</p>
               <div class='lg:flex gap-4 mb-2 items-center '>
                 <span class='text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100'>
                   Adobe xd
